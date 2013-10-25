@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>jQuery Slide</title>
+        <link href="css/jquery-slide.css" rel="stylesheet" media="screen">
+    </head>
+    
+    <body>
+        <div class="slide-pic">
+            <ul class="slide-viewport">
+                <li style="z-index:2;">
+                    <a href="javascript:void(0);">
+                        <img src="images/sample1.jpg" width="600" height="300" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="images/sample2.jpg" width="600" height="300" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);">
+                        <img src="images/sample3.jpg" width="600" height="300" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script src="js/jquery-1.6.2.min.js"></script>
+        <script src="js/jquery.slide.js"></script>
+        <script>
+            $(".slide-pic").slidePic({width:600,height:300});
+        </script>
+    </body>
+
+</html>

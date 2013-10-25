@@ -1,0 +1,13 @@
+.slide-pic ul,.slide-pic li,.slide-pic img{margin:0;padding:0;border:0;vertical-align:top;}
+.slide-pic{position:relative;overflow:hidden;}
+.slide-pic .slide-viewport li{position:absolute;left: 0;top:0;list-style:none;}
+/* 底部控制器样式 */
+.slide-pic .controller-bottom{left:50%;bottom:10px;position:absolute;z-index:99;}
+.slide-pic .controller-bottom li{background:url("../images/focus-img-button.png") no-repeat 0 0;cursor:pointer;height:9px;float:left;margin-right:10px;overflow:hidden;width:9px;_background-image:url("../images/focus-img-button-png8.png");}
+.slide-pic .controller-bottom li.current {background-position:0 -9px;}
+/* 两侧控制器样式 */
+.slide-pic .controller-side-left,.slide-pic .controller-side-right{position:absolute;height:40px;width:20px;top:50%;margin-top:-20px;z-index:99;background:rgba(0,0,0,0.3);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4c000000,endColorstr=#4c000000);zoom:1;border-radius:0 20px 20px 0;cursor:pointer;background-image:url("../images/slide-arrow.png");background-position:3px 12px;background-repeat:no-repeat;_background-image:url("../images/slide-arrow-png8.png");}
+:root .slide-pic .controller-side-left,:root .slide-pic .controller-side-right{filter:none\9;}/*for IE9*/
+.slide-pic .controller-side-left{left:0;margin-left:-20px;}
+.slide-pic .controller-side-right{right:0;border-radius:20px 0 0 20px;background-position:-17px 12px;margin-right:-20px;}
+
