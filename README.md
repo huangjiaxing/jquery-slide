@@ -1,7 +1,6 @@
 #jQuery幻灯片插件  
 
 
-----------
 
 ###使用方法
 
@@ -10,32 +9,36 @@
    2:images文件夹和css文件夹同级
 
 2.  书写html代码，结构如下
- 	```<div class="slide-pic">  
-         <ul class="slide-viewport">  
-             <li style="z-index:2;">  
-                 <a href="javascript:void(0);">  
-                     <img src="images/sample1.jpg" width="600" height="300" alt="">  
-                 </a>  
-             </li>  
-             <li>  
-                 <a href="javascript:void(0);">  
-                     <img src="images/sample2.jpg" width="600" height="300" alt="">  
-                 </a>  
-             </li>  
-             <li>  
-                 <a href="javascript:void(0);">  
-                     <img src="images/sample3.jpg" width="600" height="300" alt="">  
-                 </a>  
-             </li>  
-         </ul>  
-     </div>```
+```
+<div class="slide-pic">  
+      <ul class="slide-viewport">  
+          <li style="z-index:2;">  
+              <a href="javascript:void(0);">  
+                  <img src="images/sample1.jpg" width="600" height="300" alt="">  
+              </a>  
+          </li>  
+          <li>  
+              <a href="javascript:void(0);">  
+                  <img src="images/sample2.jpg" width="600" height="300" alt="">  
+              </a>  
+          </li>  
+          <li>  
+              <a href="javascript:void(0);">  
+                  <img src="images/sample3.jpg" width="600" height="300" alt="">  
+              </a>  
+          </li>  
+      </ul>  
+  </div>
+```
 
 说明: 每个`li`就是一张幻灯图，其中第一个`li`需要加上一句 `style="z-index:2;"`；
 
 3 调用方法如下
- 	 ```<script>  
-         $(".slide-pic").slidePic({width:600,height:300,autoSlideTime:3000,controllerLeft:true});  
-     </script>```
+```
+<script>  
+   $(".slide-pic").slidePic({width:600,height:300,autoSlideTime:3000,controllerLeft:true});  
+</script>
+```
 
 可以设置4个参数。  
 其中 `width` 和 `height` 必须设置，就是你图片的宽高。  
