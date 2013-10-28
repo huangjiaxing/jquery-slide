@@ -10,7 +10,7 @@
    2:images文件夹和css文件夹同级
 
 2.  书写html代码，结构如下
-> 	<div class="slide-pic">
+> 	```<div class="slide-pic">
 >         <ul class="slide-viewport">
 >             <li style="z-index:2;">
 >                 <a href="javascript:void(0);">
@@ -28,7 +28,7 @@
 >                 </a>
 >             </li>
 >         </ul>
->     </div>
+>     </div>```
 
 说明: 每个`li`就是一张幻灯图，其中第一个`li`需要加上一句 `style="z-index:2;"`；
 
